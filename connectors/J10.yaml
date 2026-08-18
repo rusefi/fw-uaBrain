@@ -23,8 +23,8 @@ pins:
     type: gnd
 
   - pin: J10-6
-    meta: MM100_IN_VSS
-    class: switch_inputs
+    id: [MM100_IN_VSS, MM100_IN_VSS]
+    class: [switch_inputs, event_inputs]
     ts_name: ___ Flex / VSS
     function: Digital Input / Flex fuel sensor
     type: din
