@@ -1,0 +1,51 @@
+# uaBrain castellated edge connector J15 (left edge)
+# Power input, key voltage sense, low-side outputs 1/2/9/10
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J15-1
+    function: +12v main power supply
+    type: 12V
+
+  - pin: J15-2
+    meta: MM100_IN_VBATT
+    class: analog_inputs
+    ts_name: ___ Key Voltage
+    function: +12v key/ignition voltage sense (VIGN)
+    type: 12V
+
+  - pin: J15-3
+    function: Power/Chassis GND ground
+    type: gnd
+
+  - pin: J15-4
+    function: Power/Chassis GND ground
+    type: gnd
+
+  - pin: J15-5
+    meta: MM100_OUT_PWM1
+    class: outputs
+    ts_name: ___ Low Side 9
+    function: Low Side output 9
+    type: ls
+
+  - pin: J15-6
+    meta: MM100_OUT_PWM2
+    class: outputs
+    ts_name: ___ Low Side 10
+    function: Low Side output 10
+    type: ls
+
+  - pin: J15-7
+    meta: MM100_INJ7
+    class: outputs
+    ts_name: ___ Low Side 1
+    function: Low Side output 1
+    type: ls
+
+  - pin: J15-8
+    meta: MM100_INJ8
+    class: outputs
+    ts_name: ___ Low Side 2
+    function: Low Side output 2
+    type: ls

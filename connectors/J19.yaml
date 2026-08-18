@@ -1,0 +1,36 @@
+# uaBrain castellated edge connector J19 (right edge)
+# On-board wideband controller 1 (LSU 4.9) and EGT 1 thermocouple
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J19-1
+    function: WBO1 Vs (Un) (LSU pin 6)
+    type: wbo
+
+  - pin: J19-2
+    function: WBO1 CalR (Rtrim) (LSU pin 5)
+    type: wbo
+
+  - pin: J19-3
+    function: WBO1 Ip (LSU pin 1)
+    type: wbo
+
+  - pin: J19-4
+    function: WBO1 Vs/Ip (Vm) (LSU pin 2)
+    type: wbo
+
+  - pin: J19-5
+    function: WBO1 Heater Negative (LSU pin 3)
+    type: wbo
+
+  - pin: J19-6
+    function: +12v RAW battery (WBO heater supply)
+    type: 12V
+
+  - pin: J19-7
+    function: EGT1 thermocouple negative
+    type: egt
+
+  - pin: J19-8
+    function: EGT1 thermocouple positive
+    type: egt

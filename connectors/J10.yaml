@@ -1,0 +1,38 @@
+# uaBrain castellated edge connector J10 (left edge)
+# USB, BOOT0 programming button, flex fuel input
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J10-1
+    function: PROG button input (pulls STM32 BOOT0 via the on-board circuit)
+
+  - pin: J10-2
+    function: USB +5v VBUS
+    type: 5v
+
+  - pin: J10-3
+    function: USB D-
+    type: usb
+
+  - pin: J10-4
+    function: USB D+
+    type: usb
+
+  - pin: J10-5
+    function: Power/Chassis GND ground
+    type: gnd
+
+  - pin: J10-6
+    meta: MM100_IN_VSS
+    class: switch_inputs
+    ts_name: ___ Flex / VSS
+    function: Digital Input / Flex fuel sensor
+    type: din
+
+  - pin: J10-7
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J10-8
+    function: GNDA Analog/Sensor Ground
+    type: agnd

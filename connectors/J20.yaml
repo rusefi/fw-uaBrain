@@ -1,0 +1,42 @@
+# uaBrain castellated edge connector J20 (left edge)
+# Low-side output 6, button 3, power rails
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J20-1
+    meta: MM100_SPI3_MOSI
+    class: outputs
+    ts_name: ___ Low Side 6
+    function: Low Side output 6
+    type: ls
+
+  - pin: J20-2
+    meta: MM100_IN_D4
+    class: switch_inputs
+    ts_name: ___ Button 3
+    function: BUTTON3 input
+    type: din
+
+  - pin: J20-3
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J20-4
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J20-5
+    function: +3.3v analog rail output
+    type: 3v3
+
+  - pin: J20-6
+    function: +3.3v rail output
+    type: 3v3
+
+  - pin: J20-7
+    function: +5v analog rail output
+    type: 5v
+
+  - pin: J20-8
+    function: +5v rail output
+    type: 5v

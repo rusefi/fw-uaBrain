@@ -1,0 +1,42 @@
+# uaBrain castellated edge connector J8 (right edge)
+# Low-side output 4, auxiliary analog input 1, power rails
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J8-1
+    meta: MM100_IGN8
+    class: outputs
+    ts_name: ___ Low Side 4
+    function: Low Side output 4
+    type: ls
+
+  - pin: J8-2
+    meta: MM100_IN_O2S_ANALOG
+    class: analog_inputs
+    ts_name: ___ AIN1
+    function: Auxiliary analog input 1 PullDown 500K
+    type: av
+
+  - pin: J8-3
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J8-4
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J8-5
+    function: +3.3v analog rail output
+    type: 3v3
+
+  - pin: J8-6
+    function: +3.3v rail output
+    type: 3v3
+
+  - pin: J8-7
+    function: +5v analog rail output
+    type: 5v
+
+  - pin: J8-8
+    function: +5v rail output
+    type: 5v

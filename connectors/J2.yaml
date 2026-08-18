@@ -1,0 +1,48 @@
+# uaBrain castellated edge connector J2 (left edge)
+# Pedal position sensors, CAN bus 1, buttons 1/2
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J2-1
+    meta: MM100_IN_PPS_ANALOG
+    class: analog_inputs
+    ts_name: ___ PPS1
+    function: Universal analog input. Suggested PPS input 1
+    type: av
+
+  - pin: J2-2
+    meta: MM100_IN_AUX2_ANALOG
+    class: analog_inputs
+    ts_name: ___ PPS2
+    function: Universal analog input. Suggested PPS input 2
+    type: av
+
+  - pin: J2-3
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J2-4
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J2-5
+    function: CAN bus High
+    type: can
+
+  - pin: J2-6
+    function: CAN bus Low
+    type: can
+
+  - pin: J2-7
+    meta: MM100_IN_CRANK
+    class: switch_inputs
+    ts_name: ___ Button 1
+    function: BUTTON1 input
+    type: din
+
+  - pin: J2-8
+    meta: MM100_IN_CAM
+    class: switch_inputs
+    ts_name: ___ Button 2
+    function: BUTTON2 input
+    type: din

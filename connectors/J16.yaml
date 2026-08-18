@@ -1,0 +1,48 @@
+# uaBrain castellated edge connector J16 (top edge)
+# IAT, HALL2, CAN bus 2, low-side outputs 7/8
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J16-1
+    meta: MM100_IN_IAT_ANALOG
+    class: analog_inputs
+    ts_name: ___ IAT
+    function: IAT Sensor Input
+    type: at
+
+  - pin: J16-2
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J16-3
+    meta: MM100_IN_D2
+    class: event_inputs
+    ts_name: ___ HALL2
+    function: HALL2 Sensor
+    type: hall
+
+  - pin: J16-4
+    function: CAN2 bus High
+    type: can
+
+  - pin: J16-5
+    function: CAN2 bus Low
+    type: can
+
+# J16-6 is Low Side output 7, driven by mega-mcu100-f7 module pad IO2.
+# TODO: IO2 STM32 pin is not yet known / not in hellen_mm100_meta.h - fix once
+# the mega-mcu100-f7 module schematic mapping for the IO1/IO2 pads is confirmed.
+  - pin: J16-6
+    function: Low Side output 7 (module pad IO2, STM32 pin TBD)
+    type: ls
+
+  - pin: J16-7
+    meta: MM100_LED4_YELLOW
+    class: outputs
+    ts_name: ___ Low Side 8
+    function: Low Side output 8
+    type: ls
+
+  - pin: J16-8
+    function: Power/Chassis GND ground
+    type: gnd

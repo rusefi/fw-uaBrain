@@ -1,0 +1,55 @@
+# uaBrain castellated edge connector J14 (top edge)
+# Ignition coils 4-6, injectors 4-6, knock 2 input
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J14-1
+    meta: MM100_IGN4
+    class: outputs
+    ts_name: ___ Coil 4
+    function: Smart Ignition Coil 4
+    type: ign
+
+  - pin: J14-2
+    meta: MM100_IGN5
+    class: outputs
+    ts_name: ___ Coil 5
+    function: Smart Ignition Coil 5
+    type: ign
+
+  - pin: J14-3
+    meta: MM100_IGN6
+    class: outputs
+    ts_name: ___ Coil 6
+    function: Smart Ignition Coil 6
+    type: ign
+
+  - pin: J14-4
+    meta: MM100_INJ4
+    class: outputs
+    ts_name: ___ Injector 4
+    function: Injector 4
+    type: inj
+
+  - pin: J14-5
+    meta: MM100_INJ5
+    class: outputs
+    ts_name: ___ Injector 5
+    function: Injector 5
+    type: inj
+
+  - pin: J14-6
+    meta: MM100_INJ6
+    class: outputs
+    ts_name: ___ Injector 6
+    function: Injector 6
+    type: inj
+
+  - pin: J14-7
+    class: analog_inputs
+    ts_name: ___ Knock 2
+    function: Knock sensor input 2 (other sensor pin goes to analog ground)
+
+  - pin: J14-8
+    function: GNDA Analog/Sensor Ground
+    type: agnd

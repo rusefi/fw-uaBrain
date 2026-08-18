@@ -1,0 +1,36 @@
+# uaBrain castellated edge connector J13 (top edge)
+# On-board wideband controller 2 (LSU 4.9) and EGT 2 thermocouple
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J13-1
+    function: WBO2 Vs (Un) (LSU pin 6)
+    type: wbo
+
+  - pin: J13-2
+    function: WBO2 CalR (Rtrim) (LSU pin 5)
+    type: wbo
+
+  - pin: J13-3
+    function: WBO2 Ip (LSU pin 1)
+    type: wbo
+
+  - pin: J13-4
+    function: WBO2 Vs/Ip (Vm) (LSU pin 2)
+    type: wbo
+
+  - pin: J13-5
+    function: WBO2 Heater Negative (LSU pin 3)
+    type: wbo
+
+  - pin: J13-6
+    function: +12v RAW battery (WBO heater supply)
+    type: 12V
+
+  - pin: J13-7
+    function: EGT2 thermocouple negative
+    type: egt
+
+  - pin: J13-8
+    function: EGT2 thermocouple positive
+    type: egt

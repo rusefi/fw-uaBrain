@@ -1,0 +1,46 @@
+# uaBrain castellated edge connector J3 (right edge)
+# VR discrete conditioner input, HALL1, low-side output 3
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J3-1
+    ts_name: VR_DISCRETE-
+    function: VR_DISCRETE negative input
+    type: vr
+
+  - pin: J3-2
+    meta: MM100_UART8_RX
+    class: event_inputs
+    ts_name: VR_DISCRETE+
+    function: VR_DISCRETE positive input
+    type: vr
+
+  - pin: J3-3
+    function: Power/Chassis GND ground
+    type: gnd
+
+  - pin: J3-4
+    meta: MM100_IN_D1
+    class: event_inputs
+    ts_name: ___ HALL1
+    function: HALL1 Sensor
+    type: hall
+
+  - pin: J3-5
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J3-6
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J3-7
+    meta: MM100_IGN7
+    class: outputs
+    ts_name: ___ Low Side 3
+    function: Low Side output 3
+    type: ls
+
+  - pin: J3-8
+    function: Power/Chassis GND ground
+    type: gnd

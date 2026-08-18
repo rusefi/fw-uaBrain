@@ -1,0 +1,46 @@
+# uaBrain castellated edge connector J18 (top edge)
+# VR MAX9924 conditioner input, HALL3, low-side output 5
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J18-1
+    ts_name: VR_9924-
+    function: VR_9924 negative input
+    type: vr
+
+  - pin: J18-2
+    meta: MM100_UART8_TX
+    class: event_inputs
+    ts_name: VR_9924+
+    function: VR_9924 positive input
+    type: vr
+
+  - pin: J18-3
+    function: Power/Chassis GND ground
+    type: gnd
+
+  - pin: J18-4
+    id: [MM100_IN_D3, MM100_IN_D3]
+    class: [event_inputs, sent_inputs]
+    ts_name: ___ HALL3
+    function: HALL3 Sensor (SENT capable)
+    type: hall
+
+  - pin: J18-5
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J18-6
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J18-7
+    meta: MM100_USB1ID
+    class: outputs
+    ts_name: ___ Low Side 5
+    function: Low Side output 5
+    type: ls
+
+  - pin: J18-8
+    function: Power/Chassis GND ground
+    type: gnd

@@ -1,0 +1,49 @@
+# uaBrain castellated edge connector J4 (top edge, right corner)
+# DC motor 1 (ETB), TPS inputs, CLT
+meta: config/boards/hellen_mm100_meta.h
+
+pins:
+  - pin: J4-1
+    class: outputs
+    ts_name: DC1-
+    function: DC1- output (usually electronic throttle body)
+    type: etb
+
+  - pin: J4-2
+    class: outputs
+    ts_name: DC1+
+    function: DC1+ output (usually electronic throttle body)
+    type: etb
+
+  - pin: J4-3
+    meta: MM100_IN_TPS_ANALOG
+    class: analog_inputs
+    ts_name: ___ TPS1
+    function: Universal analog input. Suggested TPS 1 sensor input
+    type: av
+
+  - pin: J4-4
+    meta: MM100_IN_AUX1_ANALOG
+    class: analog_inputs
+    ts_name: ___ TPS2
+    function: Universal analog input. Suggested TPS 2 sensor input
+    type: av
+
+  - pin: J4-5
+    function: +5v sensor supply (protected)
+    type: 5v
+
+  - pin: J4-6
+    function: GNDA Analog/Sensor Ground
+    type: agnd
+
+  - pin: J4-7
+    meta: MM100_IN_CLT_ANALOG
+    class: analog_inputs
+    ts_name: ___ CLT Coolant
+    function: ECT CLT Coolant Sensor Input
+    type: at
+
+  - pin: J4-8
+    function: GNDA Analog/Sensor Ground
+    type: agnd
