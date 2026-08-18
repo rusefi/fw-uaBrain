@@ -2,11 +2,7 @@ See https://github.com/rusefi/rusefi/wiki/Custom-Firmware
 
 # uaBrain
 
-uaBrain is a Hellen-One platform "brain" module: hardware lives in
-[hw-uaBrain](https://github.com/rusefi/hw-uaBrain), which places the
-`mega-mcu100-f7` rev 0.3 CPU module (STM32F765, `MM100_*` namespace) plus
-knock/vr-discrete/vr-max9924/motor-driver/wbo/can Hellen-One modules around
-fourteen castellated 8-pin edge connectors (J2..J21).
+uaBrain is a Hellen-One platform "brain" module
 
 ## Pin mapping
 
