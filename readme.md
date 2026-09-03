@@ -1,3 +1,5 @@
+https://github.com/rusefi/rusefi/wiki/uabrain
+
 See https://github.com/rusefi/rusefi/wiki/Custom-Firmware
 
 # uaBrain
