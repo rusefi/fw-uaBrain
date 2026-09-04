@@ -17,6 +17,9 @@ DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE -DSTM32_ADC_USE_ADC3=TRUE
 # two on-board MAX31855 EGT chips on SPI3
 DDEFS += -DEFI_MAX_31855=TRUE
 
+# Format stays the F7 default (compressed MSD).
+DEFS += -DEFI_EMBED_INI_MSD=TRUE
+
 # the mega-mcu100-f7 module does not expose the Hellen board-ID resistor pads
 DDEFS += -DHW_HELLEN_SKIP_BOARD_TYPE=TRUE
 # TODO: request a proper static board id in rusefi/hellen-one board_id registry
