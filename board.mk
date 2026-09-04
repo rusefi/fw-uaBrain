@@ -22,6 +22,9 @@ DDEFS += -DHW_HELLEN_SKIP_BOARD_TYPE=TRUE
 # TODO: request a proper static board id in rusefi/hellen-one board_id registry
 DDEFS += -DSTATIC_BOARD_ID=0
 
+# ESP32 is attached to CAN2 on this board
+DDEFS += -DEFI_SERIAL_CAN_BUS=2
+
 DDEFS += -DSTM32_ICU_USE_TIM1=TRUE -DSTM32_PWM_USE_TIM1=FALSE
 # HALL3 (MM100_IN_D3) is SENT-capable
 DDEFS += -DEFI_SENT_SUPPORT=TRUE
