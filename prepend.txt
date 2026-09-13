@@ -2,3 +2,5 @@
 
 ! example of table size override
 #define IGN_TRIM_SIZE 8
+
+#define ts_show_canbus_sniffer true
