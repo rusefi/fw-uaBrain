@@ -32,6 +32,9 @@ DDEFS += -DSTM32_ICU_USE_TIM1=TRUE -DSTM32_PWM_USE_TIM1=FALSE
 # HALL3 (MM100_IN_D3) is SENT-capable
 DDEFS += -DEFI_SENT_SUPPORT=TRUE
 
+# we support SLCAN on F7
+DDEFS += -DHAL_USE_USB_CDC_2=TRUE
+
 # SD card and accelerometer share SPI1 on the mega module
 ONBOARD_MEMS_TYPE=LIS2DH12
 
