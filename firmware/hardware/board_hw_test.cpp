@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "hellen_meta.h"
+#include "board_overrides.h"
 
 static Gpio OUTPUTS[] = {
 	// low-side outputs
@@ -28,19 +29,26 @@ static Gpio OUTPUTS[] = {
 	Gpio::MM100_IGN6, // J14-3 Coil 6
 };
 
-int getBoardMetaOutputsCount() {
+static int boardGetMetaOutputsCount() {
     return efi::size(OUTPUTS);
 }
 
-int getBoardMetaLowSideOutputsCount() {
-    return getBoardMetaOutputsCount() - 6;
+static int boardGetMetaLowSideOutputsCount() {
+    return boardGetMetaOutputsCount() - 6;
 }
 
-Gpio* getBoardMetaOutputs() {
+static Gpio* boardGetMetaOutputs() {
     return OUTPUTS;
 }
 
 // two TLE9201 H-bridges on the motor-driver module
-int getBoardMetaDcOutputsCount() {
+static int boardGetMetaDcOutputsCount() {
     return 2;
+}
+
+void setupBoardHardwareTestOverrides() {
+    custom_board_getMetaOutputsCount = boardGetMetaOutputsCount;
+    custom_board_getMetaLowSideOutputsCount = boardGetMetaLowSideOutputsCount;
+    custom_board_getMetaOutputs = boardGetMetaOutputs;
+    custom_board_getMetaDcOutputsCount = boardGetMetaDcOutputsCount;
 }

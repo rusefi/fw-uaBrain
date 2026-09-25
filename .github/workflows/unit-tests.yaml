@@ -28,6 +28,11 @@ jobs:
         shell: bash
         run: gcc -v
 
+      - name: Install RAM disk image tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mtools dosfstools zip 7zip xxd
+
       - name: Set Env Variables
         id: set-env-variables
         shell: bash

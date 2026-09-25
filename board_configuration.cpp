@@ -14,6 +14,8 @@
 #include "hellen_meta.h"
 #include "board_overrides.h"
 
+void setupBoardHardwareTestOverrides();
+
 // blue LED is the only module LED still free: green (PD7) drives DC2 disable,
 // yellow (PE8) drives Low Side output 8
 Gpio getCommsLedPin() {
@@ -140,4 +142,5 @@ void setup_custom_board_overrides() {
 	custom_board_InitHardware = uaBrain_boardInitHardware;
 	custom_board_DefaultConfiguration = uaBrain_boardDefaultConfiguration;
 	custom_board_ConfigOverrides = uaBrain_boardConfigOverrides;
+	setupBoardHardwareTestOverrides();
 }
