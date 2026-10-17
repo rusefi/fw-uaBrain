@@ -2310,7 +2310,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.10.16.uaBrain.3653258335"
+#define TS_SIGNATURE "rusEFI main.2026.10.17.uaBrain.3653258335"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
