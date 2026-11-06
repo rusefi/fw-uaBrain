@@ -1,6 +1,8 @@
 https://github.com/rusefi/rusefi/wiki/uabrain
 
-See https://github.com/rusefi/rusefi/wiki/Custom-Firmware
+https://rusefi.com/build_server/rusefi_bundle_uaBrain.zip
+
+https://github.com/rusefi/CAN-wifi-esp32-bridge/releases
 
 # uaBrain
 
