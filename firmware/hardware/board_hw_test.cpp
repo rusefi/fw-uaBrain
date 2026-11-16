@@ -16,7 +16,7 @@ static Gpio OUTPUTS[] = {
 	Gpio::MM100_IGN8, // J8-1 Low Side 4
 	Gpio::MM100_USB1ID, // J18-7 Low Side 5
 	Gpio::MM100_SPI3_MOSI, // J20-1 Low Side 6
-	// J16-6 Low Side 7 is module pad IO2, STM32 pin TBD
+	Gpio::MM100_IO2, // J16-6 Low Side 7
 	Gpio::MM100_LED4_YELLOW, // J16-7 Low Side 8
 	Gpio::MM100_OUT_PWM1, // J15-5 Low Side 9
 	Gpio::MM100_OUT_PWM2, // J15-6 Low Side 10
