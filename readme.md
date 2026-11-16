@@ -39,7 +39,7 @@ Connector overview (extracted from `hw-uaBrain.kicad_pcb` pad→net data):
 Signal-to-STM32 notes:
 
 - Low Side 1..10 map to module pads INJ7, INJ8, IGN7, IGN8, USB1ID, SPI3_MOSI,
-  IO2 (pin TBD), LED4_YELLOW, OUT_PWM1, OUT_PWM2.
+  IO2 (PD8), LED4_YELLOW, OUT_PWM1, OUT_PWM2.
 - DC1 = OUT_PWM3/OUT_PWM4/SPI2_MISO, DC2 = OUT_PWM5/SPI2_MOSI/LED2_GREEN
   (TLE9201 PWM/DIR/DIS).
 - Trigger conditioners feed MM100_UART8_TX (MAX9924) and MM100_UART8_RX

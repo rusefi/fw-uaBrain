@@ -29,11 +29,11 @@ pins:
     function: CAN2 bus Low
     type: can
 
-# J16-6 is Low Side output 7, driven by mega-mcu100-f7 module pad IO2.
-# TODO: IO2 STM32 pin is not yet known / not in hellen_mm100_meta.h - fix once
-# the mega-mcu100-f7 module schematic mapping for the IO1/IO2 pads is confirmed.
   - pin: J16-6
-    function: Low Side output 7 (module pad IO2, STM32 pin TBD)
+    meta: MM100_IO2
+    class: outputs
+    ts_name: ___ Low Side 7
+    function: Low Side output 7 (module pad IO2, PD8)
     type: ls
 
   - pin: J16-7
